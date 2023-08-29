@@ -1,3 +1,4 @@
 # Calculator
-Calculator project developed for The Odin Project.
 live: 
+
+Calculator created for The Odin Project.
