@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Maken', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #484000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEB58;
+    width: 100%;
+}
+
+
+.calculator {
+    background-color: #F1D712;
+    border-radius: 15px;
+    box-shadow: 7px 9px 2px rgba(0, 0, 0, 0.9);
+    border: 2px solid rgba(0,0,0);
+    padding: 20px;
+    width: 280px;
+}
+  
+.display {
+    font-family: 'Maken', sans-serif;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #FFF4A4;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 2em;
+    border: 2px solid black;
+    margin-bottom: 35px;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: right;
+}
+  
+.input {
+    font-size: 1em;
+    color: #484000;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+  
+.btn {
+    font-family: 'Quantifier NBP', sans-serif;
+    border: none;
+    border-radius: 13px;
+    padding: 12px 0px;
+    font-size: 2em;
+    transition: background-color 0.3s ease;
+    background-color: #454545;
+    color: #ffe6c7;
+    box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.9);
+}
+  
+.btn:active {
+    background-color: #FFEB58;
+    color: black;
+}
+  
+.op {
+    color: #FFF4A4;
+}
+  
+.zero {
+    grid-column: span 1;
+    border-radius: 13px;
+}
+  
+.equals {
+    grid-column: span 2;
+    border-radius: 13px;
+    color: #FFF4A4;
+}
+
+footer {
+    width: 100%;
+    height: 6vh;
+    background-color: #484000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+p, a {
+    color: white;
+    letter-spacing: 2px;
+}
+  
+/* Media query for screens smaller than 700px */
+@media only screen and (max-width: 700px) {
+    .calculator {
+      padding: 30px;
+      width: 300px;
+    }
+  
+    .display {
+      height: 60px;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+  
+    .buttons {
+      gap: 15px;
+    }
+  
+    .btn {
+      padding: 15px 0;
+      font-size: 1.6em;
+    }
+  }
+  
+  /* Media query for screens smaller than 300px */
+@media only screen and (max-width: 400px) {
+    .calculator {
+      padding: 20px;
+      width: 220px;
+    }
+  
+    .display {
+      height: 50px;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+    }
+  
+    .buttons {
+      gap: 10px;
+    }
+  
+    .btn {
+      padding: 10px 0;
+      font-size: 1.2em;
+    }
+}
+  
+  /* Media query for screens smaller than 200px */
+@media only screen and (max-width: 300px) {
+    .calculator {
+      padding: 10px;
+      width: 180px;
+    }
+  
+    .display {
+      height: 40px;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+  
+    .buttons {
+      gap: 5px;
+    }
+  
+    .btn {
+      padding: 5px 0;
+      font-size: 1em;
+    }
+}
+  
+  /* Media query for screens smaller than 100px */
+@media only screen and (max-width: 200px) {
+    .calculator {
+      padding: 5px;
+      width: 80px;
+    }
+  
+    .display {
+      height: 20px;
+      margin-bottom: 5px;
+      font-size: 0.8em;
+    }
+  
+    .buttons {
+      gap: 2px;
+    }
+  
+    .btn {
+      padding: 2px 0;
+      font-size: 0.7em;
+    }
+}

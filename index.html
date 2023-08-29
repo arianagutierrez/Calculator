@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.cdnfonts.com/css/quantifier-nbp" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/maken" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Calculator</h1>
+        </header>
+        <main>
+            <audio id="buttonsound" src="sounds/keysound.mp3"></audio>
+            <div class="calculator">
+                <div class="display">
+                    <span class="input" id="input">0</span>
+                </div>
+                <div class="buttons">
+                    <button class="btn op" id="ac">AC</button>
+                    <button class="btn op" id="de">DE</button>
+                    <button class="btn op" id="pi">π</button>
+                    <button class="btn op" id="divide">/</button>
+
+                    <button class="btn num" id="7">7</button>
+                    <button class="btn num" id="8">8</button>
+                    <button class="btn num" id="9">9</button>
+                    <button class="btn op" id="multiply">*</button>
+
+                    <button class="btn num" id="4">4</button>
+                    <button class="btn num" id="5">5</button>
+                    <button class="btn num" id="6">6</button>
+                    <button class="btn op" id="subtract">-</button>
+
+                    <button class="btn num" id="1">1</button>
+                    <button class="btn num" id="2">2</button>
+                    <button class="btn num" id="3">3</button>
+                    <button class="btn op" id="add">+</button>
+
+                    <button class="btn zero" id="0">0</button>
+                    <button class="btn op" id="dot">.</button>
+                    <button class="btn equals" id="equals">=</button>
+                </div>
+                <script src="script.js"></script>
+            </div>
+        </main>
+
+        <footer>
+            <p> 
+                Copyright © 
+                <script>document.write(new Date().getFullYear())</script> 
+                Ariana Gutierrez 
+            </p>
+            <a href="https://github.com/arianagutierrez" target="_blank">
+                  <i class="fa fa-github-square"></i>
+            </a>
+        </footer>
+        
+    </body>
+</html>
