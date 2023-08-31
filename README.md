@@ -1,4 +1,3 @@
 # Calculator
-live: https://arianagutierrez.github.io/calculator/
-
+live: https://arianagutierrez.github.io/Calculator/ 
 Calculator created for The Odin Project.
