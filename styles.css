@@ -15,7 +15,8 @@ body {
 
 header {
     width: 100%;
-    height: 10vh;
+    font-size: 25px;
+    padding: 12px;
     background-color: #484000;
     color: white;
     display: flex;
@@ -32,8 +33,8 @@ main {
     align-items: center;
     background-color: #FFEB58;
     width: 100%;
+    padding: 15px;
 }
-
 
 .calculator {
     background-color: #F1D712;
@@ -106,7 +107,8 @@ main {
 
 footer {
     width: 100%;
-    height: 6vh;
+    font-size: 15px;
+    padding: 10px;
     background-color: #484000;
     display: flex;
     flex-direction: row;
@@ -142,72 +144,3 @@ p, a {
       font-size: 1.6em;
     }
   }
-  
-  /* Media query for screens smaller than 300px */
-@media only screen and (max-width: 400px) {
-    .calculator {
-      padding: 20px;
-      width: 220px;
-    }
-  
-    .display {
-      height: 50px;
-      margin-bottom: 20px;
-      font-size: 1.5em;
-    }
-  
-    .buttons {
-      gap: 10px;
-    }
-  
-    .btn {
-      padding: 10px 0;
-      font-size: 1.2em;
-    }
-}
-  
-  /* Media query for screens smaller than 200px */
-@media only screen and (max-width: 300px) {
-    .calculator {
-      padding: 10px;
-      width: 180px;
-    }
-  
-    .display {
-      height: 40px;
-      margin-bottom: 10px;
-      font-size: 1.2em;
-    }
-  
-    .buttons {
-      gap: 5px;
-    }
-  
-    .btn {
-      padding: 5px 0;
-      font-size: 1em;
-    }
-}
-  
-  /* Media query for screens smaller than 100px */
-@media only screen and (max-width: 200px) {
-    .calculator {
-      padding: 5px;
-      width: 80px;
-    }
-  
-    .display {
-      height: 20px;
-      margin-bottom: 5px;
-      font-size: 0.8em;
-    }
-  
-    .buttons {
-      gap: 2px;
-    }
-  
-    .btn {
-      padding: 2px 0;
-      font-size: 0.7em;
-    }
-}
