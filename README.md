@@ -1,3 +1,3 @@
 # Calculator
 
-A [calculator](https://arianagutierrez.github.io/Calculator/) - Javascript project.
+A simple [calculator](https://arianagutierrez.github.io/Calculator/) - Javascript project.
